@@ -18,18 +18,18 @@ struct ContentView: View {
                 Image("home").font(.body)
                 
             }
-
+            
             
             Text("Activity").tabItem {
                 
                 Image("activity").font(.body)
-                    
+                
             }
             
             Text("Map").tabItem {
                 
                 Image("map").font(.body)
-                    
+                
             }
         }
     }
@@ -46,69 +46,69 @@ struct Home : View {
     var body: some View{
         
         VStack(alignment: .center,spacing: 12){
+            
+            HStack{
                 
-                HStack{
-                
-                    Button(action: {
-                        
-                    }){
-                      
-                        Image("menu").renderingMode(.original)
-                    
-            }
-                    
-                Spacer()
-                    
-                    
                 Button(action: {
-                            
+                    
                 }){
-                          
+                    
+                    Image("menu").renderingMode(.original)
+                    
+                }
+                
+                Spacer()
+                
+                
+                Button(action: {
+                    
+                }){
+                    
                     Image("profile").renderingMode(.original)
-                        
+                    
                 }
             }
-                    
+            
             Text("Explore").fontWeight(.heavy).font(.largeTitle).padding(.top, 15)
-                    
-                    
-                    HStack{
-                        
-                            Button(action:  {
-                                
-                            })    {
-                                
-                                Text("Experiences").fontWeight(.heavy).foregroundColor(.green)
-                                
-                            }
-                        
-                        Spacer()
-                        Button(action:  {
-                        
-                        })    {
-                        
-                            Text("Adventures").foregroundColor(.gray)
-                        
-                    }
             
-                        Spacer()
-                        Button(action:  {
-                    
-                        })    {
-                    
-                            Text("Activities").foregroundColor(.gray)
-                    
-                    }
-                    }.padding([.top], 30)
-                    .padding(.bottom, 15)
             
-           MiddleView()
+            HStack{
+                
+                Button(action:  {
+                    
+                })    {
+                    
+                    Text("Experiences").fontWeight(.heavy).foregroundColor(.green)
+                    
+                }
+                
+                Spacer()
+                Button(action:  {
+                    
+                })    {
+                    
+                    Text("Adventures").foregroundColor(.gray)
+                    
+                }
+                
+                Spacer()
+                Button(action:  {
+                    
+                })    {
+                    
+                    Text("Activities").foregroundColor(.gray)
+                    
+                }
+            }.padding([.top], 30)
+            .padding(.bottom, 15)
+            
+            MiddleView()
             
             BottomView().padding(.top, 10)
-                
-                }.padding()
-           }
+            
+        }.padding()
     }
+}
 
 
 

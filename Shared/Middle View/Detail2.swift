@@ -1,19 +1,17 @@
 //
-//  Detail.swift
+//  Detail2.swift
 //  TravelJournal4.0
 //
-//  Created by Fulcherberguer, Fernanda on 2021-03-03.
+//  Created by Fulcherberguer, Fernanda on 2021-03-04.
 //
 
 import SwiftUI
 
-//Add subpage
-struct Detail : View {
-    var body: some View{
-        
+struct Detail2: View {
+    var body: some View {
         VStack{
             
-            Image("Card1").resizable().frame(height: 500).aspectRatio(contentMode: .fill).offset(y: -100).padding(.bottom, -100)
+            Image("Card2").resizable().frame(height: 500).aspectRatio(contentMode: .fill).offset(y: -100).padding(.bottom, -100)
             
             GeometryReader{geo in
                 
@@ -28,7 +26,7 @@ struct Detail : View {
     }
 }
 
-struct Rounded : Shape {
+struct Rounded2 : Shape {
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 40, height: 40))
         return Path(path.cgPath)

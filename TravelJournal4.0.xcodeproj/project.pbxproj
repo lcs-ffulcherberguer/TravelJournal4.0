@@ -19,6 +19,10 @@
 		1CD8121525F0856600D03D70 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8121325F0856600D03D70 /* BottomView.swift */; };
 		1CD8122125F094A700D03D70 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8122025F094A700D03D70 /* Detail.swift */; };
 		1CD8122225F094A700D03D70 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8122025F094A700D03D70 /* Detail.swift */; };
+		1CD8123825F146F300D03D70 /* Detail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8123725F146F300D03D70 /* Detail2.swift */; };
+		1CD8123925F146F300D03D70 /* Detail2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8123725F146F300D03D70 /* Detail2.swift */; };
+		1CD8123F25F14D7700D03D70 /* Detail3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8123E25F14D7700D03D70 /* Detail3.swift */; };
+		1CD8124025F14D7700D03D70 /* Detail3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8123E25F14D7700D03D70 /* Detail3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,8 @@
 		1CD8120225F0839F00D03D70 /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
 		1CD8121325F0856600D03D70 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 		1CD8122025F094A700D03D70 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		1CD8123725F146F300D03D70 /* Detail2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail2.swift; sourceTree = "<group>"; };
+		1CD8123E25F14D7700D03D70 /* Detail3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +74,8 @@
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
-				1CD8120225F0839F00D03D70 /* MiddleView.swift */,
-				1CD8121325F0856600D03D70 /* BottomView.swift */,
-				1CD8122025F094A700D03D70 /* Detail.swift */,
+				1CD8124525F14F0A00D03D70 /* Middle View */,
+				1CD8124825F14F3B00D03D70 /* Bottom View */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -100,6 +105,25 @@
 				1CD811F125F0619C00D03D70 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		1CD8124525F14F0A00D03D70 /* Middle View */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8120225F0839F00D03D70 /* MiddleView.swift */,
+				1CD8122025F094A700D03D70 /* Detail.swift */,
+				1CD8123725F146F300D03D70 /* Detail2.swift */,
+				1CD8123E25F14D7700D03D70 /* Detail3.swift */,
+			);
+			path = "Middle View";
+			sourceTree = "<group>";
+		};
+		1CD8124825F14F3B00D03D70 /* Bottom View */ = {
+			isa = PBXGroup;
+			children = (
+				1CD8121325F0856600D03D70 /* BottomView.swift */,
+			);
+			path = "Bottom View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +226,8 @@
 				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD8122125F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */,
+				1CD8123825F146F300D03D70 /* Detail2.swift in Sources */,
+				1CD8123F25F14D7700D03D70 /* Detail3.swift in Sources */,
 				1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
 				1CD8121425F0856600D03D70 /* BottomView.swift in Sources */,
 			);
@@ -214,6 +240,8 @@
 				1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD8122225F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F525F0619C00D03D70 /* ContentView.swift in Sources */,
+				1CD8123925F146F300D03D70 /* Detail2.swift in Sources */,
+				1CD8124025F14D7700D03D70 /* Detail3.swift in Sources */,
 				1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
 				1CD8121525F0856600D03D70 /* BottomView.swift in Sources */,
 			);
