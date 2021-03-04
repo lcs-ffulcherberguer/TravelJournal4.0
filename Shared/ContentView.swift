@@ -74,14 +74,14 @@ struct Home : View {
                     
                     HStack{
                         
-                        Button(action:  {
-                            
-                        })    {
-                            
-                            Text("Experiences").fontWeight(.heavy).foregroundColor(.green)
-                            
-                        }
-                    
+                            Button(action:  {
+                                
+                            })    {
+                                
+                                Text("Experiences").fontWeight(.heavy).foregroundColor(.green)
+                                
+                            }
+                        
                         Spacer()
                         Button(action:  {
                         
@@ -99,13 +99,37 @@ struct Home : View {
                             Text("Activities").foregroundColor(.gray)
                     
                     }
-                    }.padding([.top, .bottom], 15)
+                    }.padding([.top], 30)
+                    .padding(.bottom, 15)
             
            MiddleView()
-           BottomView()
+            
+            BottomView().padding(.top, 10)
                 
                 }.padding()
            }
     }
 
+
+
+struct Detail : View {
+    var body: some View{
+        
+        VStack{
+            
+            Image("Card1").resizable().frame(height: 500).aspectRatio(contentMode: .fill)
+            
+            GeometryReader{geo in 
+                
+                
+                
+            }
+            
+            
+            
+            
+            
+        }
+    }
+}
 

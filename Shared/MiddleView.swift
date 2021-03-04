@@ -15,7 +15,7 @@ struct MiddleView : View {
            
            HStack(spacing: 25){
                
-               VStack(alignment: .leading,spacing: 5){
+               VStack(alignment: .leading,spacing: 12){
                    
                    Button(action:  {
                        
