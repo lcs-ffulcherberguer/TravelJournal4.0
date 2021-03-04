@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MiddleView : View {
+    
+    @State var show = false
    
    var body: some View {
        
@@ -18,6 +20,8 @@ struct MiddleView : View {
                VStack(alignment: .leading,spacing: 12){
                    
                    Button(action:  {
+                    
+                    self.show.toggle()
                        
                    }) {
                        
@@ -43,6 +47,7 @@ struct MiddleView : View {
                VStack(alignment: .leading,spacing: 5){
                    
                    Button(action:  {
+                    
                        
                    }) {
                        
@@ -93,9 +98,11 @@ struct MiddleView : View {
                }
                
            }
-       }
-
+       }.sheet(isPresented: $show) {
+        
+        Detail()
        
+      }
    }
-}
 
+}
