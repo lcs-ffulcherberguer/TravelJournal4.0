@@ -13,6 +13,10 @@
 		1CD811F525F0619C00D03D70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811E025F0619800D03D70 /* ContentView.swift */; };
 		1CD811F625F0619C00D03D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD811E125F0619C00D03D70 /* Assets.xcassets */; };
 		1CD811F725F0619C00D03D70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD811E125F0619C00D03D70 /* Assets.xcassets */; };
+		1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8120225F0839F00D03D70 /* MiddleView.swift */; };
+		1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8120225F0839F00D03D70 /* MiddleView.swift */; };
+		1CD8121425F0856600D03D70 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8121325F0856600D03D70 /* BottomView.swift */; };
+		1CD8121525F0856600D03D70 /* BottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8121325F0856600D03D70 /* BottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		1CD811EE25F0619C00D03D70 /* TravelJournal4.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJournal4.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD811F025F0619C00D03D70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD811F125F0619C00D03D70 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		1CD8120225F0839F00D03D70 /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
+		1CD8121325F0856600D03D70 /* BottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
+				1CD8120225F0839F00D03D70 /* MiddleView.swift */,
+				1CD8121325F0856600D03D70 /* BottomView.swift */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,8 +195,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */,
 				1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
+				1CD8121425F0856600D03D70 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,8 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD811F525F0619C00D03D70 /* ContentView.swift in Sources */,
 				1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
+				1CD8121525F0856600D03D70 /* BottomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

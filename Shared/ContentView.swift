@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        //Tab
+        //Tab bar
         TabView{
             
             Home().tabItem {
@@ -31,10 +31,7 @@ struct ContentView: View {
                 Image("map").font(.body)
                     
             }
-            
         }
-        
-            
     }
 }
 
@@ -70,10 +67,9 @@ struct Home : View {
                     Image("profile").renderingMode(.original)
                         
                 }
-
             }
                     
-                    Text("Explore").fontWeight(.heavy).font(.largeTitle)
+            Text("Explore").fontWeight(.heavy).font(.largeTitle).padding(.top, 15)
                     
                     
                     HStack{
@@ -86,7 +82,6 @@ struct Home : View {
                             
                         }
                     
-                    
                         Spacer()
                         Button(action:  {
                         
@@ -95,7 +90,7 @@ struct Home : View {
                             Text("Adventures").foregroundColor(.gray)
                         
                     }
-                    
+            
                         Spacer()
                         Button(action:  {
                     
@@ -104,95 +99,13 @@ struct Home : View {
                             Text("Activities").foregroundColor(.gray)
                     
                     }
-                }
+                    }.padding([.top, .bottom], 15)
             
-            ScrollView(.horizontal, showsIndicators: false){
+           MiddleView()
+           BottomView()
                 
-                HStack{
-                    
-                    VStack(alignment: .leading,spacing: 5){
-                        
-                        Button(action:  {
-                            
-                        }) {
-                            
-                            Image("Card1").renderingMode(.original)
-                                .resizable()
-                                .frame(width: 250, height: 350 )
-                                .cornerRadius(20)
-                                .scaledToFill()
-                            
-                        }
-                        
-                        Text("Brazil").fontWeight(.heavy)
-                            
-                        
-                        HStack(spacing: 5){
-                            
-                            Image("map").renderingMode(.original)
-                                Text("Rio de Janeiro")
-                        
-                        }
-                    }
-                    
-                    VStack(alignment: .leading,spacing: 5){
-                        
-                        Button(action:  {
-                            
-                        }) {
-                            
-                            Image("Card2").renderingMode(.original)
-                                .resizable()
-                                .frame(width: 250, height: 350 )
-                                .cornerRadius(20)
-                                .scaledToFill()
-                            
-                        }
-                        
-                        Text("Iceland").fontWeight(.heavy)
-                            
-                        
-                        HStack(spacing: 5){
-                            
-                            Image("map").renderingMode(.original)
-                                Text("Blue Lagoon")
-                    
-                    
-                        }
-                    }
-                    
-                    VStack(alignment: .leading,spacing: 5){
-                        
-                        Button(action:  {
-                            
-                        }) {
-                            
-                            Image("Card3").renderingMode(.original)
-                                .resizable()
-                                .frame(width: 250, height: 350 )
-                                .cornerRadius(20)
-                                .scaledToFill()
-                            
-                        }
-                        
-                        Text("Greece").fontWeight(.heavy)
-                            
-                        
-                        HStack(spacing: 5){
-                            
-                            Image("map").renderingMode(.original)
-                                Text("Santorini")
-                    
-                    
-                        }
-                    }
-                    
-                }
-            }
-        
                 }.padding()
-    
-       }
+           }
     }
 
 
