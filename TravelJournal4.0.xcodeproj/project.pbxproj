@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CA9A56125F2C35100CEADD5 /* Detail4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56025F2C35100CEADD5 /* Detail4.swift */; };
+		1CA9A56225F2C35100CEADD5 /* Detail4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56025F2C35100CEADD5 /* Detail4.swift */; };
+		1CA9A56825F2C70F00CEADD5 /* Detail5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56725F2C70F00CEADD5 /* Detail5.swift */; };
+		1CA9A56925F2C70F00CEADD5 /* Detail5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56725F2C70F00CEADD5 /* Detail5.swift */; };
+		1CA9A56D25F2C79B00CEADD5 /* Detail6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */; };
+		1CA9A56E25F2C79B00CEADD5 /* Detail6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */; };
 		1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */; };
 		1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */; };
 		1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811E025F0619800D03D70 /* ContentView.swift */; };
@@ -26,6 +32,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CA9A56025F2C35100CEADD5 /* Detail4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail4.swift; sourceTree = "<group>"; };
+		1CA9A56725F2C70F00CEADD5 /* Detail5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail5.swift; sourceTree = "<group>"; };
+		1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail6.swift; sourceTree = "<group>"; };
 		1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournal4_0App.swift; sourceTree = "<group>"; };
 		1CD811E025F0619800D03D70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CD811E125F0619C00D03D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +83,6 @@
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
-				1CD8121325F0856600D03D70 /* BottomView.swift */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 				1CD8124525F14F0A00D03D70 /* Middle View */,
 				1CD8124825F14F3B00D03D70 /* Bottom View */,
@@ -122,6 +130,10 @@
 		1CD8124825F14F3B00D03D70 /* Bottom View */ = {
 			isa = PBXGroup;
 			children = (
+				1CD8121325F0856600D03D70 /* BottomView.swift */,
+				1CA9A56025F2C35100CEADD5 /* Detail4.swift */,
+				1CA9A56725F2C70F00CEADD5 /* Detail5.swift */,
+				1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */,
 			);
 			path = "Bottom View";
 			sourceTree = "<group>";
@@ -226,10 +238,13 @@
 				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD8122125F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */,
+				1CA9A56825F2C70F00CEADD5 /* Detail5.swift in Sources */,
 				1CD8123825F146F300D03D70 /* Detail2.swift in Sources */,
 				1CD8123F25F14D7700D03D70 /* Detail3.swift in Sources */,
 				1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
+				1CA9A56D25F2C79B00CEADD5 /* Detail6.swift in Sources */,
 				1CD8121425F0856600D03D70 /* BottomView.swift in Sources */,
+				1CA9A56125F2C35100CEADD5 /* Detail4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,10 +255,13 @@
 				1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CD8122225F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F525F0619C00D03D70 /* ContentView.swift in Sources */,
+				1CA9A56925F2C70F00CEADD5 /* Detail5.swift in Sources */,
 				1CD8123925F146F300D03D70 /* Detail2.swift in Sources */,
 				1CD8124025F14D7700D03D70 /* Detail3.swift in Sources */,
 				1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
+				1CA9A56E25F2C79B00CEADD5 /* Detail6.swift in Sources */,
 				1CD8121525F0856600D03D70 /* BottomView.swift in Sources */,
+				1CA9A56225F2C35100CEADD5 /* Detail4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

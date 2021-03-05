@@ -9,7 +9,11 @@ import SwiftUI
 
 struct BottomView: View {
     
-    var body: some View {
+    @State var bottom1 = false
+    @State var bottom2 = false
+    @State var bottom3 = false
+    
+    var body : some View {
         
         VStack{
             
@@ -23,7 +27,6 @@ struct BottomView: View {
                     
                     Text("View all").foregroundColor(.gray)
                     
-                    
                 }
                 
             }.padding([.top], 15)
@@ -34,7 +37,10 @@ struct BottomView: View {
                 HStack(spacing: 35){
                     
                     
+                    //Ski
                     Button(action:  {
+                        
+                        self.bottom1.toggle()
                         
                     }) {
                         
@@ -48,10 +54,16 @@ struct BottomView: View {
                             
                             Text("Ski").foregroundColor(.gray)
                             
+                        }.sheet(isPresented: $bottom1) {
+                            
+                            Detail5()
                         }
                     }
                     
+                    
+                    //Hiking
                     Button(action:  {
+                        \self.bottom2.toggle()
                         
                     }) {
                         
@@ -65,33 +77,45 @@ struct BottomView: View {
                             
                             Text("Hiking").foregroundColor(.gray)
                             
+                        }.sheet(isPresented: $bottom1) {
+                            
+                            Detail4()
                         }
-                    }
-                    
-                    Button(action:  {
                         
-                    }) {
                         
-                        VStack(spacing: 8){
+                        
+                        //Kayaking
+                        Button(action:  {
                             
-                            Image("mcard3").renderingMode(.original)
-                                .resizable()
-                                .frame(width: 70, height: 55 )
-                                .cornerRadius(20)
-                                .scaledToFill()
+                            self.bottom3.toggle()
                             
-                            Text("Kayaking").foregroundColor(.gray)
+                        }) {
                             
+                            VStack(spacing: 8){
+                                
+                                Image("mcard3").renderingMode(.original)
+                                    .resizable()
+                                    .frame(width: 70, height: 55 )
+                                    .cornerRadius(20)
+                                    .scaledToFill()
+                                
+                                Text("Kayaking").foregroundColor(.gray)
+                                
+                            }.sheet(isPresented: $bottom1) {
+                                
+                                Detail5()
+                            }
                         }
-                    }
+                        
+                    }.padding(.leading, 20)
+                    .padding([.top, .bottom], 15)
                     
-                }.padding(.leading, 20)
-                .padding([.top, .bottom], 15)
+                }
                 
             }
             
         }
         
     }
-    
+
 }

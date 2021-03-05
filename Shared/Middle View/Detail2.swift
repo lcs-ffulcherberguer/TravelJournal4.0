@@ -7,11 +7,20 @@
 
 import SwiftUI
 
+//Add subpage Card2
 struct Detail2: View {
     var body: some View {
+        
         VStack{
             
-            Image("Card2").resizable().frame(height: 500).aspectRatio(contentMode: .fill).offset(y: -100).padding(.bottom, -100)
+            Image("Card5")
+                .resizable()
+                .frame(height: 500)
+                .aspectRatio(contentMode: .fit)
+                .offset(y: -100).padding(.bottom, -100)
+                
+            
+            
             
             GeometryReader{geo in
                 

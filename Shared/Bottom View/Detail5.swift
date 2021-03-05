@@ -1,19 +1,17 @@
 //
-//  Detail.swift
+//  Detail5.swift
 //  TravelJournal4.0
 //
-//  Created by Fulcherberguer, Fernanda on 2021-03-03.
+//  Created by Fulcherberguer, Fernanda on 2021-03-05.
 //
 
 import SwiftUI
 
-//Add subpage Card 1
-struct Detail : View {
-    var body: some View{
-        
+struct Detail5: View {
+    var body: some View {
         VStack{
             
-            Image("Card4")
+            Image("Card7")
                 .resizable()
                 .frame(height: 500)
                 .aspectRatio(contentMode: .fit)
@@ -36,7 +34,7 @@ struct Detail : View {
     }
 }
 
-struct Rounded : Shape {
+struct Rounded5 : Shape {
     func path(in rect: CGRect) -> Path {
         let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 40, height: 40))
         return Path(path.cgPath)
