@@ -50,7 +50,7 @@ struct MiddleView : View {
                     
                 }.sheet(isPresented: $show) {
                     
-                    Detail()
+                    Detail() 
                     
                 }
                 

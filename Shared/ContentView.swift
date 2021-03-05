@@ -15,20 +15,20 @@ struct ContentView: View {
             
             Home().tabItem {
                 
-                Image("home").font(.body)
+                Image(systemName: "house")
                 
             }
             
             
             Text("Activity").tabItem {
                 
-                Image("activity").font(.body)
+                Image(systemName: "square.and.pencil")
                 
             }
             
             Text("Map").tabItem {
                 
-                Image("map").font(.body)
+                Image(systemName: "map")
                 
             }
         }
@@ -78,7 +78,7 @@ struct Home : View {
                     
                 })    {
                     
-                    Text("Experiences").fontWeight(.heavy).foregroundColor(.green)
+                    Text("Fun").fontWeight(.heavy).foregroundColor(.green)
                     
                 }
                 
@@ -87,7 +87,7 @@ struct Home : View {
                     
                 })    {
                     
-                    Text("Adventures").foregroundColor(.gray)
+                    Text("Historic").foregroundColor(.gray)
                     
                 }
                 
@@ -96,9 +96,10 @@ struct Home : View {
                     
                 })    {
                     
-                    Text("Activities").foregroundColor(.gray)
+                    Text("Tropical").foregroundColor(.gray)
                     
                 }
+                
                 
             }.padding([.top], 30)
             .padding(.bottom, 15)
