@@ -74,9 +74,10 @@
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
+				1CD8121325F0856600D03D70 /* BottomView.swift */,
+				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 				1CD8124525F14F0A00D03D70 /* Middle View */,
 				1CD8124825F14F3B00D03D70 /* Bottom View */,
-				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -121,7 +122,6 @@
 		1CD8124825F14F3B00D03D70 /* Bottom View */ = {
 			isa = PBXGroup;
 			children = (
-				1CD8121325F0856600D03D70 /* BottomView.swift */,
 			);
 			path = "Bottom View";
 			sourceTree = "<group>";

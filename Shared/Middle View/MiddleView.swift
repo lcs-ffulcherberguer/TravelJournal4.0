@@ -42,7 +42,7 @@ struct MiddleView : View {
                     
                     HStack(spacing: 5){
                         
-                        Image("map").renderingMode(.original)
+                        Image("map2").renderingMode(.original)
                         Text("Rio de Janeiro").foregroundColor(.gray)
                         
                         
@@ -55,7 +55,7 @@ struct MiddleView : View {
                 }
                 
                 //Card 2 - Iceland
-                VStack(alignment: .leading,spacing: 5){
+                VStack(alignment: .leading,spacing: 12){
                     
                     Button(action:  {
                         
@@ -76,7 +76,7 @@ struct MiddleView : View {
                     
                     HStack(spacing: 5){
                         
-                        Image("map").renderingMode(.original)
+                        Image("map2").renderingMode(.original)
                         Text("Blue Lagoon").foregroundColor(.gray)
                         
                         
@@ -89,7 +89,7 @@ struct MiddleView : View {
                 }
                 
                 //Card 3 - Greece
-                VStack(alignment: .leading,spacing: 5){
+                VStack(alignment: .leading,spacing: 12){
                     
                     
                     Button(action:  {
@@ -111,7 +111,7 @@ struct MiddleView : View {
                     
                     HStack(spacing: 5){
                         
-                        Image("map").renderingMode(.original)
+                        Image("map2").renderingMode(.original)
                         Text("Santorini").foregroundColor(.gray)
                         
                         

@@ -99,6 +99,7 @@ struct Home : View {
                     Text("Activities").foregroundColor(.gray)
                     
                 }
+                
             }.padding([.top], 30)
             .padding(.bottom, 15)
             
