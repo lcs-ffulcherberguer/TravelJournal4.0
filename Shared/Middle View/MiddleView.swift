@@ -37,7 +37,8 @@ struct MiddleView : View {
                         
                     }
                     
-                    Text("Brazil").fontWeight(.heavy)
+                    Text("Brazil")
+                        .fontWeight(.heavy)
                     
                     
                     HStack(spacing: 5){

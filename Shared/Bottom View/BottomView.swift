@@ -13,7 +13,7 @@ struct BottomView: View {
     @State var bottom2 = false
     @State var bottom3 = false
     
-    var body : some View {
+    var body: some View {
         
         VStack{
             
@@ -25,7 +25,8 @@ struct BottomView: View {
                     
                 }) {
                     
-                    Text("View all").foregroundColor(.gray)
+                    Text("View all")
+                        .foregroundColor(.gray)
                     
                 }
                 
@@ -34,7 +35,7 @@ struct BottomView: View {
             
             ScrollView(.horizontal, showsIndicators: false){
                 
-                HStack(spacing: 35){
+                HStack(spacing: 25){
                     
                     
                     //Ski
@@ -44,15 +45,18 @@ struct BottomView: View {
                         
                     }) {
                         
-                        VStack(spacing: 8){
+                        VStack(spacing: 12){
                             
-                            Image("mcard1").renderingMode(.original)
+                            Image("mcard1")
+                                .renderingMode(.original)
                                 .resizable()
                                 .frame(width: 70, height: 55 )
                                 .cornerRadius(20)
                                 .scaledToFill()
                             
-                            Text("Ski").foregroundColor(.gray)
+                            Text("Ski")
+                                .foregroundColor(.gray)
+                                .fontWeight(.medium)
                             
                         }.sheet(isPresented: $bottom1) {
                             
@@ -63,26 +67,30 @@ struct BottomView: View {
                     
                     //Hiking
                     Button(action:  {
-                        \self.bottom2.toggle()
+                        
+                        self.bottom2.toggle()
                         
                     }) {
                         
-                        VStack(spacing: 8){
+                        VStack(spacing: 12){
                             
-                            Image("mcard2").renderingMode(.original)
+                            Image("mcard2")
+                                .renderingMode(.original)
                                 .resizable()
                                 .frame(width: 70, height: 55 )
                                 .cornerRadius(20)
                                 .scaledToFill()
                             
-                            Text("Hiking").foregroundColor(.gray)
+                            Text("Hiking")
+                                .foregroundColor(.gray)
+                                .fontWeight(.medium)
                             
-                        }.sheet(isPresented: $bottom1) {
+                        }.sheet(isPresented: $bottom2) {
                             
-                            Detail4()
+                            Detail5()
                         }
                         
-                        
+                    }
                         
                         //Kayaking
                         Button(action:  {
@@ -91,19 +99,22 @@ struct BottomView: View {
                             
                         }) {
                             
-                            VStack(spacing: 8){
+                            VStack(spacing: 12){
                                 
-                                Image("mcard3").renderingMode(.original)
+                                Image("mcard3")
+                                    .renderingMode(.original)
                                     .resizable()
                                     .frame(width: 70, height: 55 )
                                     .cornerRadius(20)
                                     .scaledToFill()
                                 
-                                Text("Kayaking").foregroundColor(.gray)
+                                Text("Kayaking")
+                                    .foregroundColor(.gray)
+                                    .fontWeight(.medium)
                                 
-                            }.sheet(isPresented: $bottom1) {
+                            }.sheet(isPresented: $bottom3) {
                                 
-                                Detail5()
+                                Detail6()
                             }
                         }
                         
@@ -118,4 +129,4 @@ struct BottomView: View {
         
     }
 
-}
+

@@ -15,9 +15,11 @@ struct Detail2: View {
             
             Image("Card5")
                 .resizable()
-                .frame(height: 500)
-                .aspectRatio(contentMode: .fit)
-                .offset(y: -100).padding(.bottom, -100)
+                .frame(width:UIScreen.main.bounds.width,height: 500)
+                .aspectRatio(1.35, contentMode: .fit)
+                .offset(y: -200).padding(.bottom, -200)
+                .cornerRadius(10)
+                .scaledToFit()
                 
             
             
@@ -28,9 +30,9 @@ struct Detail2: View {
                     
                     Color.white
                     
-                }.clipShape(Rounded())
-                .padding(.top, -70)
-            }
+                }
+            }.clipShape(Rounded())
+            .padding(.top, -75)
         }
     }
 }

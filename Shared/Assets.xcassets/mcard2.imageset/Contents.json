@@ -1,15 +1,16 @@
 {
   "images" : [
     {
-      "filename" : "istockphoto-1219599271-612x612.jpg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Untitled_Artwork 2 copy-29@3x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Untitled_Artwork 2 copy-40@2x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

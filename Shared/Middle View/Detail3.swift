@@ -15,9 +15,11 @@ struct Detail3: View {
             
             Image("Card6")
                 .resizable()
-                .frame(height: 500)
-                .aspectRatio(contentMode: .fit)
-                .offset(y: -100).padding(.bottom, -100)
+                .frame(width:UIScreen.main.bounds.width,height: 500)
+                .aspectRatio(3.75, contentMode: .fill)
+                .offset(y: -200).padding(.bottom, -200)
+                .cornerRadius(10)
+                .scaledToFit()
             
             GeometryReader{geo in
                 
@@ -25,9 +27,10 @@ struct Detail3: View {
                     
                     Color.white
                     
-                }.clipShape(Rounded())
-                .padding(.top, -70)
-            }
+                }
+                
+            }.clipShape(Rounded())
+            .padding(.top, -75)
         }
     }
 }
