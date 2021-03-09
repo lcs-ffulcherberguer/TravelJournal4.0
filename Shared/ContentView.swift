@@ -7,11 +7,16 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    
+    @State var map3 = false
+    
     var body: some View {
         
         //Tab bar
         TabView{
+            
             
             Home().tabItem {
                 
@@ -26,14 +31,24 @@ struct ContentView: View {
                 
             }
             
-            Text("Map").tabItem {
+            mapview().tabItem {
                 
-                Image(systemName: "map")
+                    
+                    Image(systemName: "map")
+                    
+                }
                 
-            }
+                
+            } //.sheet(isPresented: $map3) {
+                
+                
+            //WorldMap(store: testStore)
+                    
+                
+            //}
         }
     }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

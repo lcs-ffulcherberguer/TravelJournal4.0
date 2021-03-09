@@ -13,6 +13,10 @@
 		1CA9A56925F2C70F00CEADD5 /* Detail5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56725F2C70F00CEADD5 /* Detail5.swift */; };
 		1CA9A56D25F2C79B00CEADD5 /* Detail6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */; };
 		1CA9A56E25F2C79B00CEADD5 /* Detail6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */; };
+		1CB84AA225F7D69A00241629 /* mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB84AA125F7D69A00241629 /* mapview.swift */; };
+		1CB84AA325F7D69A00241629 /* mapview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB84AA125F7D69A00241629 /* mapview.swift */; };
+		1CB84AAB25F7D88100241629 /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB84AAA25F7D88100241629 /* map.swift */; };
+		1CB84AAC25F7D88100241629 /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB84AAA25F7D88100241629 /* map.swift */; };
 		1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */; };
 		1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */; };
 		1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD811E025F0619800D03D70 /* ContentView.swift */; };
@@ -35,6 +39,8 @@
 		1CA9A56025F2C35100CEADD5 /* Detail4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail4.swift; sourceTree = "<group>"; };
 		1CA9A56725F2C70F00CEADD5 /* Detail5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail5.swift; sourceTree = "<group>"; };
 		1CA9A56C25F2C79B00CEADD5 /* Detail6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail6.swift; sourceTree = "<group>"; };
+		1CB84AA125F7D69A00241629 /* mapview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapview.swift; sourceTree = "<group>"; };
+		1CB84AAA25F7D88100241629 /* map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
 		1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJournal4_0App.swift; sourceTree = "<group>"; };
 		1CD811E025F0619800D03D70 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CD811E125F0619C00D03D70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CB84AB325F7D89A00241629 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1CB84AA125F7D69A00241629 /* mapview.swift */,
+				1CB84AAA25F7D88100241629 /* map.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		1CD811D925F0619800D03D70 = {
 			isa = PBXGroup;
 			children = (
@@ -82,8 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
-				1CD811E025F0619800D03D70 /* ContentView.swift */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
+				1CD811E025F0619800D03D70 /* ContentView.swift */,
+				1CB84AB325F7D89A00241629 /* Map */,
 				1CD8124525F14F0A00D03D70 /* Middle View */,
 				1CD8124825F14F3B00D03D70 /* Bottom View */,
 			);
@@ -235,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB84AA225F7D69A00241629 /* mapview.swift in Sources */,
 				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
+				1CB84AAB25F7D88100241629 /* map.swift in Sources */,
 				1CD8122125F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */,
 				1CA9A56825F2C70F00CEADD5 /* Detail5.swift in Sources */,
@@ -252,7 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CB84AA325F7D69A00241629 /* mapview.swift in Sources */,
 				1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */,
+				1CB84AAC25F7D88100241629 /* map.swift in Sources */,
 				1CD8122225F094A700D03D70 /* Detail.swift in Sources */,
 				1CD811F525F0619C00D03D70 /* ContentView.swift in Sources */,
 				1CA9A56925F2C70F00CEADD5 /* Detail5.swift in Sources */,

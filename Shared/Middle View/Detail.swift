@@ -52,18 +52,6 @@ struct detailMiddle : View {
                 
             }
             
-            HStack(spacing: 8){
-                
-                ForEach(0..<5){_ in
-                    
-                    Image(systemName: "star.fill")
-                        .font(.body)
-                        .foregroundColor(.yellow)
-                    
-                }
-                
-            }
-            
         }.padding()
     }
 }
@@ -77,7 +65,7 @@ struct detailTop : View {
                 
                 VStack(alignment: .leading){
                     
-                    //Spacer()
+                    //Spacer(minLength: 0)
                     
                     Text("Things to do")
                         .fontWeight(.heavy)
@@ -90,11 +78,6 @@ struct detailTop : View {
                 
                 }
                 
-                Spacer()
-                
-                Text("$299")
-                    .foregroundColor(Color("bg"))
-                    .font(.largeTitle)
                 
             }
             
