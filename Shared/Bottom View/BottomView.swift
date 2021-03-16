@@ -60,7 +60,7 @@ struct BottomView: View {
                             
                         }.sheet(isPresented: $bottom1) {
                             
-                            Detail5()
+                            Detail4()
                         }
                     }
                     

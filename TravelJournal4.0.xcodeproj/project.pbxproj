@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C85BEDD25FFEAC1005ED737 /* Journal writing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Journal writing";
+			sourceTree = "<group>";
+		};
 		1CB84AB325F7D89A00241629 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
+				1C85BEDD25FFEAC1005ED737 /* Journal writing */,
 				1CB84AB325F7D89A00241629 /* Map */,
 				1CD8124525F14F0A00D03D70 /* Middle View */,
 				1CD8124825F14F3B00D03D70 /* Bottom View */,

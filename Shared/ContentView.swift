@@ -39,13 +39,7 @@ struct ContentView: View {
                 }
                 
                 
-            } //.sheet(isPresented: $map3) {
-                
-                
-            //WorldMap(store: testStore)
-                    
-                
-            //}
+            } 
         }
     }
 

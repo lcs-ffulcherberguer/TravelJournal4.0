@@ -23,15 +23,68 @@ struct Detail3: View {
             
             GeometryReader{geo in
                 
-                VStack{
+                VStack(alignment: .leading){
                     
-                    Color.white
+                    detailTop3()
+                    detailMiddle3()
                     
                 }
                 
-            }.clipShape(Rounded())
-            .padding(.top, -75)
+            }.clipShape(Rounded3())
+            .padding(.top, -10)
         }
+    }
+}
+
+struct detailMiddle3 : View {
+    
+    var body: some View {
+        
+        VStack(alignment: .leading, spacing: 10) {
+            
+            HStack{
+                
+                Image("map2")
+                    .renderingMode(.original)
+                Text("Santorini")
+                
+            }
+            
+        }//.padding()
+    }
+}
+
+struct detailTop3 : View {
+    var body: some View {
+        
+        
+        ZStack {
+            
+            VStack(alignment: .leading, spacing: 10){
+                
+                HStack{
+                    
+                    VStack {
+                        
+                        Text("Things to do in Greece")
+                            .fontWeight(.heavy)
+                            .font(.largeTitle)
+                            .padding(.bottom)
+                            .foregroundColor(Color(#colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)))
+                            .cornerRadius(10)
+                        
+                    }
+                    
+                    //Spacer()
+                    
+                    //Text("descriptipn")
+                    
+                }
+                
+            }.padding()
+        }
+        
     }
 }
 
