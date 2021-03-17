@@ -58,14 +58,14 @@ struct detailMiddle : View {
                     
                 }
                 
-                Image("Card1")
+                Image("noronha")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 145, height: 145)
                 
             }
             .padding()
-            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 0.3678831336)))
             .cornerRadius(30)
             
             
@@ -82,7 +82,7 @@ struct detailMiddle : View {
                     
                 }
                 
-                Image("Card1")
+                Image("paraty")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 145, height: 145)
@@ -90,7 +90,7 @@ struct detailMiddle : View {
                 
             }
             .padding()
-            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 0.37)))
             .cornerRadius(30)
             
             
@@ -108,7 +108,7 @@ struct detailMiddle : View {
                         .font(.body)
                 }
                 
-                Image("Card1")
+                Image("abismo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 145, height: 145)
@@ -116,24 +116,23 @@ struct detailMiddle : View {
                 
             }
             .padding()
-            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 0.3660637842)))
             .cornerRadius(30)
             
             //Place 4
             HStack{
-                
                 VStack{
                     
-                    Text("3. Abismo Anhumes:")
+                    Text("4. Lençois Maranhenses National Park:")
                         .fontWeight(.heavy)
                         .foregroundColor(Color(#colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)))
                     
-                    Text("For some new adventure. Spenlunking, snorkeling , and stalagmites.")
+                    Text("Ride the sand dunes aboard a jeep with experienced guides and stop for a dip in the lagoons.")
                         .foregroundColor(Color(#colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)))
                         .font(.body)
                 }
                 
-                Image("Card1")
+                Image("lencois")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 145, height: 145)
@@ -141,17 +140,14 @@ struct detailMiddle : View {
                 
             }
             .padding()
-            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)))
+            .background(Color(#colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 0.3702108305)))
             .cornerRadius(30)
-            
-            
-            
             
         }
         
     }
     
-}//.padding()
+}
 
 
 struct detailTop : View {
@@ -171,7 +167,7 @@ struct detailTop : View {
                             .font(.largeTitle)
                             .padding(.bottom)
                             .foregroundColor(Color(#colorLiteral(red: 0.1294117719, green: 0.2156862766, blue: 0.06666667014, alpha: 1)))
-                            .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 1)))
+                            .background(Color(#colorLiteral(red: 0.5843137503, green: 0.8235294223, blue: 0.4196078479, alpha: 0.5598779966)))
                             .cornerRadius(10)
                         
                         Text("Time needed in each place: 2+ days")

@@ -43,15 +43,31 @@ struct detailMiddle6 : View {
         
         VStack(alignment: .leading, spacing: 10) {
             
-            HStack{
-                
-                Image("map2")
-                    .renderingMode(.original)
-                Text("BLue Lagoon")
-                
-            }
-            
-        }//.padding()
+                                
+                    //Place 1
+                    HStack{
+                        VStack {
+                            Text("3. Blue Lagoon:")
+                                .fontWeight(.heavy)
+                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                            
+                            Text("Outdoor geothermal pool with a distinctive blue and nice warm temperatures.")
+                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                                .font(.body)
+                            
+                        }
+                        
+                        Image("lagoon-1")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 145, height: 145)
+                        
+                    }
+                    .padding()
+                    .background(Color(#colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 0.3651808647)))
+                    .cornerRadius(30)
+                    
+        }
     }
 }
 

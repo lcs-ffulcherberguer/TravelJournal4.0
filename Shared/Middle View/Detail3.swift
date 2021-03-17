@@ -21,17 +21,18 @@ struct Detail3: View {
                 .cornerRadius(10)
                 .scaledToFit()
             
-            GeometryReader{geo in
+            
+            
+            VStack(alignment: .leading){
                 
-                VStack(alignment: .leading){
+                ScrollView(.vertical, showsIndicators: false) {
                     
                     detailTop3()
                     detailMiddle3()
                     
                 }
                 
-            }.clipShape(Rounded3())
-            .padding(.top, -10)
+            }
         }
     }
 }
@@ -42,15 +43,102 @@ struct detailMiddle3 : View {
         
         VStack(alignment: .leading, spacing: 10) {
             
+            //Place 1
             HStack{
+                VStack {
+                    Text("1. Acropolis:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                    
+                    Text("Remarkable architectural design, made from glittering marble.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                        .font(.body)
+                    
+                }
                 
-                Image("map2")
-                    .renderingMode(.original)
-                Text("Santorini")
+                Image("acropolis")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
                 
             }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 0.3668931935)))
+            .cornerRadius(30)
             
-        }//.padding()
+            
+            //Place 2
+            HStack{
+                VStack {
+                    Text("2. Santorini:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                    
+                    Text("Admire the architecture and landscape of the island.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("santorini")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 0.3668931935)))
+            .cornerRadius(30)
+            
+            //Place 2
+            HStack{
+                VStack {
+                    Text("3. Samaria gorge:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                    
+                    Text("Range of trecks available for any nature lovers.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("samaria")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 0.3668931935)))
+            .cornerRadius(30)
+            
+            //Place 2
+            HStack{
+                VStack {
+                    Text("4. Epidaurus Theater:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                    
+                    Text("A ceremonial space from the 4th century dedicated to the famous God of medicine, Acsclepius.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.3176470697, green: 0.07450980693, blue: 0.02745098062, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("epidaurus")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 0.3668931935)))
+            .cornerRadius(30)
+            
+            
+        }
+        
     }
 }
 
@@ -75,10 +163,6 @@ struct detailTop3 : View {
                             .cornerRadius(10)
                         
                     }
-                    
-                    //Spacer()
-                    
-                    //Text("descriptipn")
                     
                 }
                 

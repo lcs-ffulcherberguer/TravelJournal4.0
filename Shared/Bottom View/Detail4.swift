@@ -22,19 +22,16 @@ struct Detail4: View {
                 .cornerRadius(10)
                 .scaledToFit()
             
-            
-            
-            GeometryReader{geo in
+            VStack(alignment: .leading){
                 
-                VStack(alignment: .leading){
+                ScrollView(.vertical, showsIndicators: false) {
                     
                     detailTop4()
                     detailMiddle4()
                     
                 }
                 
-            }.clipShape(Rounded4())
-            .padding(.top, -10)
+            }
         }
     }
 }
@@ -45,15 +42,102 @@ struct detailMiddle4 : View {
         
         VStack(alignment: .leading, spacing: 10) {
             
-            //HStack{
             
-            //Image("map2")
-            //.renderingMode(.original)
-            //Text("BLue Lagoon")
+            //PLace 1
+            HStack {
+                VStack {
+                    Text("1. Whistler Blackcomb:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                    
+                    
+                    Text("All skill levels, full service resort village right at the base (ideal place for families and casual skiers.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("whistler")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 0.3698362586)))
+            .cornerRadius(30)
             
-            //}
+            //Place 2
+            HStack{
+                VStack {
+                    Text("2. Vail Ski Resort:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                    
+                    Text("All skill levels, town of Vail offers luxury hotels, upscale restaurants, and shops.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("vail")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 0.374224101)))
+            .cornerRadius(30)
             
-        }//.padding()
+            //Place 3
+            HStack{
+                VStack {
+                    Text("3. Aspen Snowmass:")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                    
+                    Text("Four ski areas surrounding Aspen and Snowmass village. For intermesiate and expert skiers, containd easy areas for newcomers.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("snowmass")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 0.3693546661)))
+            .cornerRadius(30)
+            
+            //Place 4
+            HStack{
+                
+                VStack {
+                    Text("4. Lake Louise")
+                        .fontWeight(.heavy)
+                        .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                    
+                    Text("Highly recommended for family and any skill levels. Resorts's daycare centre for kids up to age six. Five causal restaurants on th emaountain.")
+                        .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
+                        .font(.body)
+                    
+                }
+                
+                Image("lake")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 145, height: 145)
+                
+            }
+            .padding()
+            .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 0.3737960188)))
+            .cornerRadius(30)
+            
+        }
     }
 }
 
@@ -77,69 +161,11 @@ struct detailTop4 : View {
                             .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 1)))
                             .cornerRadius(10)
                         
-                        //PLace 1
-                        HStack {
-                            
-                            Text("1. Whistler Blackcomb:")
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
-                            
-                            Text("All skill levels, full service resort village right at the base (ideal place for families and casual skiers.")
-                                .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 1)))
-                                .cornerRadius(10)
-                            
-                        }.padding(10)
-                        
-                        //Place 2
-                        HStack{
-                            Text("2. Vail Ski Resort:")
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
-                            
-                            Text("All skill levels, town of Vail offers luxury hotels, upscale restaurants, and shops.")
-                                .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 1)))
-                                .cornerRadius(10)
-                            
-                        }.padding(10)
-                        
-                        //Place 3
-                        HStack{
-                            Text("3. Aspen Snowmass:")
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
-                            
-                            Text("Four ski areas surrounding Aspen and Snowmass village. For intermesiate and expert skiers, containd easy areas for newcomers.")
-                                .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 1)))
-                                .cornerRadius(10)
-                            
-                        }.padding(10)
-                        
-                        //Place 4
-                        HStack{
-                            Text("4. Lake Louise")
-                                .fontWeight(.heavy)
-                                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
-                            
-                            Text("Highly recommended for family and any skill levels. Resorts's daycare centre for kids up to age six. Five causal restaurants on th emaountain.")
-                                .foregroundColor(Color(#colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)))
-                                .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 1)))
-                                .cornerRadius(10)
-                            
-                        }.padding(10)
-                        
-                        
                     }
-                    
-                    //Spacer()
-                    
-                    //Text("descriptipn")
                     
                 }
                 
-            }.padding()
+            }
         }
         
     }
