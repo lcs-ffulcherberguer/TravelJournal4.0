@@ -12,6 +12,7 @@ struct BottomView: View {
     @State var bottom1 = false
     @State var bottom2 = false
     @State var bottom3 = false
+    @State var bottom4 = false
     
     var body: some View {
         
@@ -23,12 +24,21 @@ struct BottomView: View {
                 Spacer()
                 Button(action:  {
                     
+                    self.bottom4.toggle()
+                    
                 }) {
                     
                     Text("View all")
                         .foregroundColor(.gray)
                     
+                }.sheet(isPresented: $bottom4) {
+                    
+                    NavigationView{
+                        FavouriteView()
+                    }
+                    
                 }
+                
                 
             }.padding([.top], 15)
             
@@ -91,42 +101,42 @@ struct BottomView: View {
                         }
                         
                     }
-                        
-                        //Kayaking
-                        Button(action:  {
-                            
-                            self.bottom3.toggle()
-                            
-                        }) {
-                            
-                            VStack(spacing: 12){
-                                
-                                Image("mcard3")
-                                    .renderingMode(.original)
-                                    .resizable()
-                                    .frame(width: 70, height: 55 )
-                                    .cornerRadius(20)
-                                    .scaledToFill()
-                                
-                                Text("Kayaking")
-                                    .foregroundColor(.gray)
-                                    .fontWeight(.medium)
-                                
-                            }.sheet(isPresented: $bottom3) {
-                                
-                                Detail6()
-                            }
-                        }
-                        
-                    }.padding(.leading, 20)
-                    .padding([.top, .bottom], 15)
                     
-                }
+                    //Kayaking
+                    Button(action:  {
+                        
+                        self.bottom3.toggle()
+                        
+                    }) {
+                        
+                        VStack(spacing: 12){
+                            
+                            Image("mcard3")
+                                .renderingMode(.original)
+                                .resizable()
+                                .frame(width: 70, height: 55 )
+                                .cornerRadius(20)
+                                .scaledToFill()
+                            
+                            Text("Kayaking")
+                                .foregroundColor(.gray)
+                                .fontWeight(.medium)
+                            
+                        }.sheet(isPresented: $bottom3) {
+                            
+                            Detail6()
+                        }
+                    }
+                    
+                }.padding(.leading, 20)
+                .padding([.top, .bottom], 15)
                 
             }
             
         }
         
     }
+    
+}
 
 

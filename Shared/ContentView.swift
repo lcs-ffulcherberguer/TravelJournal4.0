@@ -33,15 +33,18 @@ struct ContentView: View {
             
             mapview().tabItem {
                 
-                    
-                    Image(systemName: "map")
-                    
-                }
                 
+                Image(systemName: "map")
                 
-            } 
+            }
+            
+            
         }
+        
     }
+    
+}
+
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -56,30 +59,29 @@ struct Home : View {
         
         VStack(alignment: .center,spacing: 12){
             
-            HStack{
-                
-                Button(action: {
-                    
-                }){
-                    
-                    Image("menu").renderingMode(.original)
-                    
-                }
-                
-                Spacer()
-                
-                
-                Button(action: {
-                    
-                }){
-                    
-                    Image("profile").renderingMode(.original)
-                    
-                }
-            }
+            //HStack{
             
-            Text("Explore").fontWeight(.heavy).font(.largeTitle).padding(.top, 15)
+            // Button(action: {
             
+            //}){
+            
+            // Image("menu").renderingMode(.original)
+            
+            // }
+            
+            //Spacer()
+            
+            
+            // Button(action: {
+            
+            // }){
+            
+            //Image("profile").renderingMode(.original)
+            
+            //}
+            //  }
+            
+            Text("Explore").fontWeight(.heavy).font(.largeTitle).padding(.top, 7)
             
             HStack{
                 
@@ -113,13 +115,18 @@ struct Home : View {
             }.padding([.top], 30)
             .padding(.bottom, 15)
             
+            
             MiddleView()
             
             BottomView().padding(.top, 10)
             
-        }.padding()
+        }
+        .padding()
+        
+        
     }
 }
+
 
 
 
