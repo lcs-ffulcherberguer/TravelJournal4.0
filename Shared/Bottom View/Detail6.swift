@@ -2,7 +2,6 @@
 //  Detail6.swift
 //  TravelJournal4.0
 //
-//  Created by Fulcherberguer, Fernanda on 2021-03-05.
 //
 
 import SwiftUI
@@ -83,7 +82,7 @@ struct detailTop6 : View {
                     
                     VStack {
                         
-                        Text("Best places to ho kayaking")
+                        Text("Best places to go kayaking")
                             .fontWeight(.heavy)
                             .font(.title)
                             .padding(.bottom)

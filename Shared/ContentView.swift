@@ -2,7 +2,6 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by Fulcherberguer, Fernanda on 2021-03-03.
 //
 
 import SwiftUI
@@ -45,8 +44,6 @@ struct ContentView: View {
     
 }
 
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
@@ -57,6 +54,7 @@ struct Home : View {
     
     var body: some View{
         
+            
         VStack(alignment: .center,spacing: 12){
             
             //HStack{
@@ -81,39 +79,50 @@ struct Home : View {
             //}
             //  }
             
-            Text("Explore").fontWeight(.heavy).font(.largeTitle).padding(.top, 7)
+            Text("Explore")
+                .fontWeight(.heavy)
+                .font(.largeTitle)
+                .padding(.top, 4)
             
-            HStack{
-                
-                Button(action:  {
-                    
-                })    {
-                    
-                    Text("Fun").fontWeight(.heavy).foregroundColor(.green)
-                    
-                }
-                
-                Spacer()
-                Button(action:  {
-                    
-                })    {
-                    
-                    Text("Historic").foregroundColor(.gray)
-                    
-                }
-                
-                Spacer()
-                Button(action:  {
-                    
-                })    {
-                    
-                    Text("Tropical").foregroundColor(.gray)
-                    
-                }
-                
-                
-            }.padding([.top], 30)
-            .padding(.bottom, 15)
+            Spacer()
+            
+            Text("Ideas of places to travel...")
+                .fontWeight(.heavy)
+                .foregroundColor(Color(#colorLiteral(red: 0.05882352963, green: 0.180392161, blue: 0.2470588237, alpha: 1)))
+                .background(Color(#colorLiteral(red: 0.6981520653, green: 0.8407587409, blue: 0.9837896228, alpha: 0.3737960188)))
+                .cornerRadius(50)
+            
+            //HStack{
+            
+            // Button(action:  {
+            
+            //  })    {
+            
+            //  Text("Fun").fontWeight(.heavy).foregroundColor(.green)
+            
+            //  }
+            
+            // Spacer()
+            // Button(action:  {
+            
+            //   })    {
+            
+            //   Text("Historic").foregroundColor(.gray)
+            
+            //   }
+            
+            //   Spacer()
+            //    Button(action:  {
+            
+            //  })    {
+            
+            //       Text("Tropical").foregroundColor(.gray)
+            
+            //   }
+            //
+            
+            // }.padding([.top], 30)
+            //  .padding(.bottom, 15)
             
             
             MiddleView()
@@ -123,9 +132,9 @@ struct Home : View {
         }
         .padding()
         
-        
+        }
     }
-}
+
 
 
 
