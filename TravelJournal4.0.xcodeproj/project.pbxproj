@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C082C572607E3D600DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C562607E3D600DD8877 /* FavouriteView.swift */; };
-		1C082C582607E3D600DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C562607E3D600DD8877 /* FavouriteView.swift */; };
+		1C082C89260B886500DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C88260B886400DD8877 /* FavouriteView.swift */; };
+		1C082C8C260B886900DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C88260B886400DD8877 /* FavouriteView.swift */; };
 		1C91CD7C2604E51600ED3268 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD7B2604E51600ED3268 /* Place.swift */; };
 		1C91CD7D2604E51600ED3268 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD7B2604E51600ED3268 /* Place.swift */; };
 		1C91CD992605334600ED3268 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD982605334600ED3268 /* PlaceDetailView.swift */; };
@@ -44,7 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C082C562607E3D600DD8877 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteView.swift; sourceTree = "<group>"; };
+		1C082C88260B886400DD8877 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavouriteView.swift; path = ../FavouriteView.swift; sourceTree = "<group>"; };
 		1C91CD7B2604E51600ED3268 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		1C91CD982605334600ED3268 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 		1C91CD9F260533D600ED3268 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
 				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
-				1C082C562607E3D600DD8877 /* FavouriteView.swift */,
+				1C082C88260B886400DD8877 /* FavouriteView.swift */,
 				1C85BEDD25FFEAC1005ED737 /* Journal writing */,
 				1C91CD7A2604E46F00ED3268 /* View all */,
 				1CB84AB325F7D89A00241629 /* Map */,
@@ -285,6 +285,7 @@
 			files = (
 				1CB84AA225F7D69A00241629 /* mapview.swift in Sources */,
 				1C91CD7C2604E51600ED3268 /* Place.swift in Sources */,
+				1C082C89260B886500DD8877 /* FavouriteView.swift in Sources */,
 				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CB84AAB25F7D88100241629 /* map.swift in Sources */,
 				1CD8122125F094A700D03D70 /* Detail.swift in Sources */,
@@ -296,7 +297,6 @@
 				1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
 				1CA9A56D25F2C79B00CEADD5 /* Detail6.swift in Sources */,
 				1C91CD992605334600ED3268 /* PlaceDetailView.swift in Sources */,
-				1C082C572607E3D600DD8877 /* FavouriteView.swift in Sources */,
 				1CD8121425F0856600D03D70 /* BottomView.swift in Sources */,
 				1CA9A56125F2C35100CEADD5 /* Detail4.swift in Sources */,
 			);
@@ -308,6 +308,7 @@
 			files = (
 				1CB84AA325F7D69A00241629 /* mapview.swift in Sources */,
 				1C91CD7D2604E51600ED3268 /* Place.swift in Sources */,
+				1C082C8C260B886900DD8877 /* FavouriteView.swift in Sources */,
 				1CD8120425F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CB84AAC25F7D88100241629 /* map.swift in Sources */,
 				1CD8122225F094A700D03D70 /* Detail.swift in Sources */,
@@ -319,7 +320,6 @@
 				1CD811F325F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
 				1CA9A56E25F2C79B00CEADD5 /* Detail6.swift in Sources */,
 				1C91CD9A2605334600ED3268 /* PlaceDetailView.swift in Sources */,
-				1C082C582607E3D600DD8877 /* FavouriteView.swift in Sources */,
 				1CD8121525F0856600D03D70 /* BottomView.swift in Sources */,
 				1CA9A56225F2C35100CEADD5 /* Detail4.swift in Sources */,
 			);
