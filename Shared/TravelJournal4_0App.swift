@@ -13,7 +13,7 @@ struct TravelJournal4_0App: App {
         WindowGroup {
             
             NavigationView{
-            ContentView()
+                ContentView()
                 
             }
         }

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C082C89260B886500DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C88260B886400DD8877 /* FavouriteView.swift */; };
 		1C082C8C260B886900DD8877 /* FavouriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C082C88260B886400DD8877 /* FavouriteView.swift */; };
+		1C366B152617F3580080EC44 /* JournalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C366B142617F3580080EC44 /* JournalData.swift */; };
+		1C366B1C2617F3950080EC44 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C366B1A2617F3950080EC44 /* CoreDataModel.xcdatamodeld */; };
+		1C366B202617F5680080EC44 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C366B1F2617F5680080EC44 /* CoreDataManager.swift */; };
+		1C4FE5FC261CB88700CD85F1 /* TravelDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4FE5FB261CB88700CD85F1 /* TravelDetail.swift */; };
 		1C91CD7C2604E51600ED3268 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD7B2604E51600ED3268 /* Place.swift */; };
 		1C91CD7D2604E51600ED3268 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD7B2604E51600ED3268 /* Place.swift */; };
 		1C91CD992605334600ED3268 /* PlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C91CD982605334600ED3268 /* PlaceDetailView.swift */; };
@@ -45,6 +49,10 @@
 
 /* Begin PBXFileReference section */
 		1C082C88260B886400DD8877 /* FavouriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FavouriteView.swift; path = ../FavouriteView.swift; sourceTree = "<group>"; };
+		1C366B142617F3580080EC44 /* JournalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalData.swift; sourceTree = "<group>"; };
+		1C366B1B2617F3950080EC44 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		1C366B1F2617F5680080EC44 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		1C4FE5FB261CB88700CD85F1 /* TravelDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelDetail.swift; sourceTree = "<group>"; };
 		1C91CD7B2604E51600ED3268 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		1C91CD982605334600ED3268 /* PlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailView.swift; sourceTree = "<group>"; };
 		1C91CD9F260533D600ED3268 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
@@ -89,6 +97,10 @@
 		1C85BEDD25FFEAC1005ED737 /* Journal writing */ = {
 			isa = PBXGroup;
 			children = (
+				1C366B1A2617F3950080EC44 /* CoreDataModel.xcdatamodeld */,
+				1C4FE5FB261CB88700CD85F1 /* TravelDetail.swift */,
+				1C366B1F2617F5680080EC44 /* CoreDataManager.swift */,
+				1C366B142617F3580080EC44 /* JournalData.swift */,
 			);
 			path = "Journal writing";
 			sourceTree = "<group>";
@@ -127,8 +139,8 @@
 			children = (
 				1CD811DF25F0619800D03D70 /* TravelJournal4_0App.swift */,
 				1CD811E025F0619800D03D70 /* ContentView.swift */,
-				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 				1C082C88260B886400DD8877 /* FavouriteView.swift */,
+				1CD811E125F0619C00D03D70 /* Assets.xcassets */,
 				1C85BEDD25FFEAC1005ED737 /* Journal writing */,
 				1C91CD7A2604E46F00ED3268 /* View all */,
 				1CB84AB325F7D89A00241629 /* Map */,
@@ -283,19 +295,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C366B152617F3580080EC44 /* JournalData.swift in Sources */,
 				1CB84AA225F7D69A00241629 /* mapview.swift in Sources */,
 				1C91CD7C2604E51600ED3268 /* Place.swift in Sources */,
+				1C366B202617F5680080EC44 /* CoreDataManager.swift in Sources */,
 				1C082C89260B886500DD8877 /* FavouriteView.swift in Sources */,
 				1CD8120325F0839F00D03D70 /* MiddleView.swift in Sources */,
 				1CB84AAB25F7D88100241629 /* map.swift in Sources */,
 				1CD8122125F094A700D03D70 /* Detail.swift in Sources */,
 				1C91CDA0260533D600ED3268 /* Places.swift in Sources */,
 				1CD811F425F0619C00D03D70 /* ContentView.swift in Sources */,
+				1C4FE5FC261CB88700CD85F1 /* TravelDetail.swift in Sources */,
 				1CA9A56825F2C70F00CEADD5 /* Detail5.swift in Sources */,
 				1CD8123825F146F300D03D70 /* Detail2.swift in Sources */,
 				1CD8123F25F14D7700D03D70 /* Detail3.swift in Sources */,
 				1CD811F225F0619C00D03D70 /* TravelJournal4_0App.swift in Sources */,
 				1CA9A56D25F2C79B00CEADD5 /* Detail6.swift in Sources */,
+				1C366B1C2617F3950080EC44 /* CoreDataModel.xcdatamodeld in Sources */,
 				1C91CD992605334600ED3268 /* PlaceDetailView.swift in Sources */,
 				1CD8121425F0856600D03D70 /* BottomView.swift in Sources */,
 				1CA9A56125F2C35100CEADD5 /* Detail4.swift in Sources */,
@@ -563,6 +579,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C366B1A2617F3950080EC44 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C366B1B2617F3950080EC44 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 1C366B1B2617F3950080EC44 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1CD811DA25F0619800D03D70 /* Project object */;
 }

@@ -24,7 +24,7 @@ struct ContentView: View {
             }
             
             
-            Text("Activity").tabItem {
+            JournalData(coreDM: CoreDataManager()).tabItem {
                 
                 Image(systemName: "square.and.pencil")
                 
