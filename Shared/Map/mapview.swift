@@ -16,8 +16,8 @@ struct mapview: View {
                 GeometryReader { proxy in
                     
                     map(coordinate: CLLocationCoordinate2D(
-                            latitude: 23.5505,
-                            longitude: 46.6333))
+                            latitude: 3.8576,
+                            longitude: 32.4297))
                         .frame(width: proxy.size.width,
                                height: proxy.size.height,
                                alignment: .center)

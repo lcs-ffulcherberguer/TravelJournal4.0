@@ -1,32 +1,35 @@
 //
 //  CoreDataManager.swift
-//  TravelJournal4.0 (iOS)
+//  TravelJournal4.0
 //
-//  Created by Fulcherberguer, Fernanda on 2021-04-02.
 //
 
 import Foundation
 import CoreData
 
+
 class CoreDataManager {
     
+    //Initialize Core Data stack
     let persistentContainer: NSPersistentContainer
     
     init() {
-        
         persistentContainer = NSPersistentContainer(name: "CoreDataModel")
         persistentContainer.loadPersistentStores { (description, error) in
+            
             if let error = error {
-                fatalError("Core Data Store failed \(error.localizedDescription)")
+                fatalError("Core Data Store failed \(error.localizedDescription )")
                 
             }
         }
     }
     
-    func deleteTravel(travel: Travels) {
+    
+    func deleteTravel(travel: Travel) {
+        
         persistentContainer.viewContext.delete(travel)
         
-        do{
+        do {
             
             try persistentContainer.viewContext.save()
             
@@ -35,18 +38,17 @@ class CoreDataManager {
             persistentContainer.viewContext.rollback()
             print("Failed to save context \(error)")
             
+            
+            
         }
-        
     }
     
-    
-    
-    func getAllTravels( ) -> [Travels] {
-        let fetchRequest: NSFetchRequest<Travels> = Travels.fetchRequest()
+    func getAllTravels() -> [Travel] {
+        let fetchRequest: NSFetchRequest<Travel> = Travel.fetchRequest()
         
-        do{
+        do {
             
-            return try persistentContainer.viewContext.fetch(fetchRequest)
+            return try persistentContainer.viewContext.fetch(fetchRequest )
             
         } catch {
             
@@ -55,20 +57,18 @@ class CoreDataManager {
         }
     }
     
-    func saveTravels(title: String) {
-        
-        let travels = Travels(context: persistentContainer.viewContext)
-        travels.title = title
+    func saveTravel(title: String) {
+        let travel = Travel(context:  persistentContainer.viewContext)
+        travel.title = title
         
         do {
             
             try persistentContainer.viewContext.save()
             
-        }catch{
+        } catch {
             
-            print("Failed to save Travels \(error)")
+            print("Failed to save movie \(error)")
             
         }
     }
 }
-
